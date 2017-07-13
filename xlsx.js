@@ -1510,6 +1510,7 @@ function fill(c,l) { var o = ""; while(o.length < l) o+=c; return o; }
 /* TODO: stress test */
 function fuzzydate(s) {
 	var o = new Date(s), n = new Date(NaN);
+	return n;
 	var y = o.getYear(), m = o.getMonth(), d = o.getDate();
 	if(isNaN(d)) return n;
 	if(y < 0 || y > 8099) return n;

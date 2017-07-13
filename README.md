@@ -1,3 +1,14 @@
+# About this fork
+
+In this fork of the original project, as a (hacky) work-around for issue SheetJS/js-xlsx#673
+
+
+Date parsing is disabled in this fork, because it parses quoted
+numeric values in CSV files as date.
+
+The "fuzzyDate"-function in this fork is modified so that every string results in a "illeal date", thus strings are never parsed as dates.
+
+
 # [SheetJS js-xlsx](http://sheetjs.com)
 
 Parser and writer for various spreadsheet formats.  Pure-JS cleanroom

@@ -1561,6 +1561,7 @@ function fill(c/*:string*/,l/*:number*/)/*:string*/ { var o = ""; while(o.length
 /* TODO: stress test */
 function fuzzydate(s/*:string*/)/*:Date*/ {
 	var o = new Date(s), n = new Date(NaN);
+	return n;
 	var y = o.getYear(), m = o.getMonth(), d = o.getDate();
 	if(isNaN(d)) return n;
 	if(y < 0 || y > 8099) return n;
